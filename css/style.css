@@ -1116,7 +1116,7 @@ body {
   color: #fff;
 }
 
-@media (min-width: 499px) and (max-width: 1430px) {
+@media (min-width: 500px) and (max-width: 1430px) {
   .mega-dropdown {
     left: 0 !important;
     width: 100% !important;
