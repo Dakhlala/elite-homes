@@ -18,6 +18,10 @@
   --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: var(--text-dark);
@@ -143,6 +147,11 @@ body {
   padding: 0 !important;
   min-width: unset;
 }
+.navbar-nav .nav-link.active {
+  color: var(--primary-purple) !important;
+  position: relative;
+}
+
 
 .mega-inner {
   max-width: 1300px;
@@ -1107,7 +1116,7 @@ body {
   color: #fff;
 }
 
-@media (min-width: 590px) and (max-width: 1430px) {
+@media (min-width: 570px) and (max-width: 1430px) {
   .mega-dropdown {
     left: 0 !important;
     width: 100% !important;
@@ -1129,6 +1138,11 @@ body {
   .mega-col {
     padding: 0 0 16px 0 !important;
   }
+
+    .navbar-nav .nav-link.active::after {
+    display: none;
+  }
+
   .active-link::after,
   .hover-li-effect .dropdown-toggle-custom::before {
     display: none;
